@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+
+
+<body>
+
+    <header class="header barra"><!--barra fixa-->
+
+        <a id="inicio" href="site_principal.html"><img class="logo" src="img/logo (2).png" alt="Logomarca"></a>
+
+        <ul class="nav">
+            <li class="esconder"><a href="site_principal.html">Home</a></li>
+            <li class="dropdown"><a class="dropbtn escolha" href="#">Produtos</a>
+                <div class="dropdown-content">
+                    <a href="feminino.html">Feminino</a>
+                    <a href="masculino.html">Masculino</a>
+                    <a href="kids.html">Kids</a>
+                    <a href="produtos.html">Todos os produtos</a>
+                </div>
+            </li>
+
+            <li class="esconder"><a href="#contato">Contato</a></li>
+        </ul>
+
+        <a id="final" href="compra.html"><img src="img/carrinho.png"></a>
+
+    </header>
+
+    <div id="topo" class="buscar"> <!--buscador de produtos-->
+        <input class="input" type="text" placeholder="O que você procura?">
+
+    </div>
+
+    <section class="filtros"> <!--filtros-->
+        <div class="filtro-botao">
+            <button class="botao"> Categoria ᨆ</button>
+
+            <div class="filtro-menu">
+                <label>
+                    <input type="checkbox" name="filtro1"> Feminino
+                </label>
+                <label>
+                    <input type="checkbox" name="filtro2"> Masculino
+                </label>
+                <label>
+                    <input type="checkbox" name="filtro3"> Kids
+                </label>
+
+            </div>
+        </div>
+
+        <div class="filtro-botao">
+            <button class="botao">Tamanho ᨆ</button>
+            <div class="filtro-menu">
+                <label>
+                    <input type="checkbox" name="filtro1"> P
+                </label>
+                <label>
+                    <input type="checkbox" name="filtro2"> M
+                </label>
+                <label>
+                    <input type="checkbox" name="filtro3"> G
+                </label>
+
+            </div>
+        </div>
+    </section>
+
+
+
+    <div class="cards-wrapper"> <!--cards produtos-->
+        <div class="cards-container">
+            <div class="card">
+                <img src="img/blusao.webp">
+                <div>
+                    <h1>Blusa Feminina</h1>
+                    <h2>Tricô Gola Alta</h2>
+                    <span>R$ 79,90</span>
+                    <a class="bot-det" href="blusafem.html">Detalhes</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="img/vestidofem.jpg">
+                <div>
+                    <h1>Vestido Feminino</h1>
+                    <h2>Vestido Longo</h2>
+                    <span>R$ 231,99</span>
+                    <a class="bot-det" href="vestidofem.html">Detalhes</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="img/bermudamasc.webp">
+                <div>
+                    <h1>Bermuda Masculina</h1>
+                    <h2>Linho - Azul</h2>
+                    <span>R$ 96,99</span>
+                    <a class="bot-det" href="bermudamasc.html">Detalhes</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="cards-wrapper">
+        <div class="cards-container">
+            <div class="card">
+                <img src="img/camisetamasc.jpg">
+                <div>
+                    <h1>Camiseta Masculina</h1>
+                    <h2>Manga longa texturizada</h2>
+                    <span>R$ 84,99 </span>
+                    <a class="bot-det" href="camisetamasc.html">Detalhes</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="img/blusakidsfem.webp">
+                <div>
+                    <h1>Blusa infantil Fem</h1>
+                    <h2>Algodão</h2>
+                    <span>R$ 45,99</span>
+                    <a class="bot-det" href="blusakidsfem.html">Detalhes</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="img/blusakidsmasc.webp">
+                <div>
+                    <h1>Blusa infantil Masc</h1>
+                    <h2>Linho - Estampada </h2>
+                    <span>R$ 45,99</span>
+                    <a class="bot-det" href="blusakidsmasc.html">Detalhes</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <div style="height: 200px;" class="vazio"></div> <!--vazio da página-->
+    </div>
+
+    <div id="contato" class="contato"><!--Seção contato-->
+        <div class="fale">
+            <h2>Nossas redes</h2>
+            <img class="redes" src="img/facebook.png">
+            <img class="redes" src="img/instagram.png">
+            <img class="redes" src="img/zap.png">
+            <br>
+            <br>
+            <p>Sac: 0800 151 222 320</p>
+            <p>Email: elipe@gmail.com.br</p>
+        </div>
+        <div class="fale1 esconder">
+            <h3>Ganhe 10% na<br> sua primeira compra <br>usando: BEMVINDO</h3>
+        </div>
+        <div class="imagem">
+            <img src="img/logo (2).png" alt="Logomarca">
+        </div>
+    </div>
+
+
+    <div><!--seção voltar ao topo-->
+        <a class="fim" href="#topo">Voltar ao topo</a>
+    </div>
+
+    <footer class="direitos"><!--Seção footer-->
+        <h2>© 2024 Elipe. Todos os direitos reservados.</h2>
+    </footer>
+
+
+</body>
+
+</html>

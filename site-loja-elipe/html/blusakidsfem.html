@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+
+
+<body>
+
+    <header class="header barra"><!--barra fixa-->
+
+        <a id="inicio" href="site_principal.html"><img class="logo" src="img/logo (2).png" alt="Logomarca"></a>
+
+        <ul class="nav">
+            <li class="esconder"><a href="site_principal.html">Home</a></li>
+            <li class="dropdown"><a class="dropbtn escolha" href="#">Produtos</a>
+                <div class="dropdown-content">
+                    <a href="feminino.html">Feminino</a>
+                    <a href="masculino.html">Masculino</a>
+                    <a href="kids.html">Kids</a>
+                    <a href="produtos.html">Todos os produtos</a>
+                </div>
+            </li>
+
+            <li class="esconder"><a href="#contato">Contato</a></li>
+        </ul>
+
+        <a id="final" href="compra.html"><img src="img/carrinho.png"></a>
+
+    </header>
+
+    <section class="produto">
+        <div class="produto-cont">
+            <div class="imagemprinc">
+                <img src="img/blusakidsfem2.webp" alt="">
+            </div>
+            <div class="produto-escolhas-cont">
+                <div class="produto-escolhas">
+                    <p style="font-size: 19px; font-weight: bold; ">Blusa infantil<br>Fem</p>
+                    <p style="font-size: 18px;">R$ 45,99</p>
+                    <div class="Tamanho">
+                        <p>Selecione o Tamanho:</p>
+                        <label for="tamanho-p">
+                            <input type="radio" id="tamanho-p" name="tamanho" value="P">
+                            P
+                        </label>
+                        <label for="tamanho-m">
+                            <input type="radio" id="tamanho-m" name="tamanho" value="M">
+                            M
+                        </label>
+                        <label for="tamanho-g">
+                            <input type="radio" id="tamanho-g" name="tamanho" value="G">
+                            G
+                        </label>
+
+                    </div>
+                    <div class="Quantidade">
+                        <label for="quantidade">Quantidade:</label>
+                        <input type="number" id="quantidade" name="quantidade" min="1" value="1">
+                    </div>
+
+                </div>
+                <div class="produto-escolhas1">Ganhe 10% na
+                    sua primeira compra usando: BEMVINDO</div>
+                <div>
+                    <a class="but-car" href="compra.html">Adicionar ao Carrinho</a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <div class="prod-sobre"><!--Descrição do produto-->
+
+        <div class="prod-topicos">
+            <h2 style="font-size: 25px; color: rgb(84, 80, 80);">Sobre a peça</h2>
+
+            <h3 id="prod-desc" class="prod-descricao">Com listras multicoloridas em amarelo, vermelho, verde e azul
+                sobre um fundo branco, esta camiseta é perfeita para ocasiões casuais e dias ensolarados. O detalhe da
+                barra franzida adiciona um toque feminino e delicado, proporcionando um ajuste confortável e estiloso.
+                Ideal para qualquer estação, esta camiseta combina conforto e sofisticação em uma peça versátil.
+                <br><br><br>
+                Material: Tecido leve e respirável.
+                <br>
+                Cor: Multicolorida.
+                <br>
+                Modelo: Camiseta com mangas.
+                <br>
+                Detalhes: Listras multicoloridas.
+                <br>
+                Tamanhos disponíveis: P, M, G.
+                <br><br><br>
+                Promoção: Ganhe 10% de desconto na sua primeira compra com o código BEMVINDO.
+                <br><br><br>
+                Disponibilidade: Em estoque. Envio imediato.
+                <br><br><br>
+                Instruções de Cuidado: Lavar à mão com água fria, não usar alvejante, secar à sombra.
+            </h3>
+
+        </div>
+    </div>
+
+    <div class="vazio-prod"></div> <!--vazio da página-->
+    </div>
+
+    <div id="contato" class="contato"><!--Seção contato-->
+        <div class="fale">
+            <h2>Nossas redes</h2>
+            <img class="redes" src="img/facebook.png">
+            <img class="redes" src="img/instagram.png">
+            <img class="redes" src="img/zap.png">
+            <br>
+            <br>
+            <p>Sac: 0800 151 222 320</p>
+            <p>Email: elipe@gmail.com.br</p>
+        </div>
+        <div class="fale1 esconder">
+            <h3>Ganhe 10% na<br> sua primeira compra <br>usando: BEMVINDO</h3>
+        </div>
+        <div class="imagem">
+            <img src="img/logo (2).png" alt="Logomarca">
+        </div>
+    </div>
+
+    <div><!--seção voltar ao topo-->
+        <a class="fim" href="#topo">Voltar ao topo</a>
+    </div>
+
+    <footer class="direitos"><!--Seção footer-->
+        <h2>© 2024 Elipe. Todos os direitos reservados.</h2>
+    </footer>
+
+</body>
+
+</html>

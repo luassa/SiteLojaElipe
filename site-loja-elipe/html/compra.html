@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+
+
+<body>
+    <header class="header barra"><!--barra fixa-->
+
+        <a id="inicio" href="site_principal.html"><img class="logo" src="img/logo (2).png" alt="Logomarca"></a>
+
+        <ul class="nav">
+            <li class="esconder"><a href="site_principal.html">Home</a></li>
+            <li class="dropdown"><a class="dropbtn escolha" href="#">Produtos</a>
+                <div class="dropdown-content">
+                    <a href="feminino.html">Feminino</a>
+                    <a href="masculino.html">Masculino</a>
+                    <a href="kids.html">Kids</a>
+                    <a href="produtos.html">Todos os produtos</a>
+                </div>
+            </li>
+            <li class="esconder"><a href="#contato">Contato</a></li>
+        </ul>
+
+        <a id="final" href="compra.html"><img src="img/carrinho.png"></a>
+
+    </header>
+
+    <body>
+
+        <section> <!--Seção guia para o usuário no formulário de entrega-->
+            <div class="guia-entrega">
+                <div class="num">
+                    <div class="numeracao">
+                        <a href="#dados-pessoais">1</a>
+                    </div>
+                    <div class="numeracao-desc">
+                        <a href="#dados-pessoais">Dados Pessoais</a>
+                    </div>
+                </div>
+
+                <div class="num">
+                    <div class="numeracao-desc">
+                        ⎺⎺⎺⎺⎺⎺⎺⎺⎺
+                    </div>
+                </div>
+
+                <div class="num">
+                    <div class="numeracao">
+                        2
+                    </div>
+                    <div class="numeracao-desc">
+                        <a href="#entrega">Entrega</a>
+                    </div>
+                </div>
+                <div class="num">
+                    <div class="numeracao-desc">
+                        ⎺⎺⎺⎺⎺⎺⎺⎺⎺
+                    </div>
+                </div>
+                <div class="num">
+                    <div class="numeracao">
+                        3
+                    </div>
+                    <div class="numeracao-desc">
+                        <a href="#pagamento">Pagamento</a>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <!--FORMULÁRIOS-->
+        <section>
+            <!-- Seção formulário de entrega Dados Pessoais-->
+            <div class="formulario">
+
+                <!-- Seção numero que separa -->
+                <div class="guia-entrega1">
+                    <div id="dados-pessoais" class="num1">
+                        <div class="numeracao1">1</div>
+                        <div class="numeracao-desc1">DADOS PESSOAIS</div>
+                    </div>
+                </div>
+
+                <form id="form-compra">
+
+                    <label for="email">E-mail:</label><br>
+                    <input class="email" type="email" placeholder="seu@email.com" id="email" name="email"
+                        required><br><br>
+
+                    <div class="form-alinhamento">
+                        <div>
+                            <label for="primeiro-nome">Primeiro Nome:</label><br>
+                            <input type="text" id="primeiro-nome" name="primeiro-nome" required>
+                        </div>
+                        <div>
+                            <label for="segundo-nome">Segundo Nome:</label><br>
+                            <input type="text" id="segundo-nome" name="segundo-nome" required>
+                        </div>
+                    </div><br>
+
+                    <label for="cpf">CPF:</label><br>
+                    <input type="text" placeholder="999.999.999-99" id="cpf" name="cpf" required><br><br>
+
+                    <label for="telefone">Telefone:</label><br>
+                    <input type="text" placeholder="34 99999-9999" id="telefone" name="telefone" required><br><br>
+                    <!-- Seção numero que separa -->
+                    <div class="guia-entrega1">
+                        <div id="entrega" class="num1">
+                            <div class="numeracao1">2</div>
+                            <div class="numeracao-desc1">ENTREGA</div>
+                        </div>
+                    </div>
+
+                    <!-- Seção formulário de entrega - Entrega -->
+                    <div>
+                        <label for="cep">CEP:</label><br>
+                        <input type="tel" placeholder="99999-999" id="cep" name="cep" required><br><br>
+                    </div>
+                    <div>
+                        <label for="endereco">Endereço:</label><br>
+                        <input class="endereco" type="text" id="endereco" name="endereco" required><br><br>
+                    </div>
+                    <div class="form-alinhamento">
+                        <div>
+                            <label for="numero">Número:</label><br>
+                            <input type="text" id="numero" name="numero" required>
+                        </div>
+                        <div>
+                            <label for="complemento">Complemento:</label><br>
+                            <input type="text" placeholder="Casa, Apto" id="complemento" name="complemento">
+                        </div>
+                    </div><br>
+
+                    <div class="form-alinhamento">
+                        <div>
+                            <label for="cidade">Cidade:</label><br>
+                            <input type="text" id="cidade" name="cidade" required>
+                        </div>
+                        <div>
+                            <label for="estado">Estado:</label><br>
+                            <input type="text" placeholder="UF" id="estado" name="estado" required>
+                        </div>
+                    </div>
+
+                    <!-- Seção numero que separa -->
+                    <div class="guia-entrega1">
+                        <div id="pagamento" class="num1">
+                            <div class="numeracao1">3</div>
+                            <div class="numeracao-desc1">PAGAMENTO</div>
+                        </div>
+                    </div>
+
+                    <div class="pag">
+                        <div>
+                            <p style="font-weight: bold;">Selecione a Forma de pagamento:</p>
+                        </div>
+                        <div>
+                            <label for="pag-pix">
+                                <input type="radio" id="pag-pix" name="pagamento" value="PIX" required> PIX
+                            </label>
+                        </div>
+                        <div>
+                            <label for="pag-credito">
+                                <input type="radio" id="pag-credito" name="pagamento" value="Credito" required> Cartão
+                                de Crédito
+                            </label>
+                        </div>
+                        <div>
+                            <label for="pag-debito">
+                                <input type="radio" id="pag-debito" name="pagamento" value="Debito" required> Cartão de
+                                Débito
+                            </label>
+                        </div>
+                    </div><br>
+                    <div class="botaocompra1">
+                        <input class="botaocompra" type="submit" value="FINALIZAR COMPRA">
+                    </div>
+                </form>
+            </div>
+        </section>
+
+
+        <!--Java para retornar à pagina inicial quando finalizar a compra-->
+        <script>
+            document.getElementById('form-compra').addEventListener('submit', function (event) {
+                event.preventDefault();  // Evita o envio padrão do formulário
+                window.location.href = 'site_principal.html';  // Redireciona para a página desejada
+            });
+        </script>
+
+
+
+        <div style="height: 200px;" class="vazio"></div> <!--vazio da página-->
+
+        <div id="contato" class="contato"><!--Seção contato-->
+            <div class="fale">
+                <h2>Nossas redes</h2>
+                <img class="redes" src="img/facebook.png">
+                <img class="redes" src="img/instagram.png">
+                <img class="redes" src="img/zap.png">
+                <br>
+                <br>
+
+                <p>Sac: 0800 151 222 320</p>
+                <p>Email: elipe@gmail.com.br</p>
+            </div>
+            <div class="fale1 esconder">
+                <h3>Ganhe 10% na<br> sua primeira compra <br>usando: BEMVINDO</h3>
+            </div>
+            <div class="imagem">
+                <img src="img/logo (2).png" alt="Logomarca">
+            </div>
+        </div>
+
+        <div><!--seção voltar ao topo-->
+            <a class="fim" href="#topo">Voltar ao topo</a>
+        </div>
+
+        <footer class="direitos"><!--Seção footer-->
+            <h2>© 2024 Elipe. Todos os direitos reservados.</h2>
+        </footer>
+
+    </body>
+
+</html>
